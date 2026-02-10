@@ -89,9 +89,13 @@ export default function App() {
     },
     {
       title: "OneHand",
-      desc: "Coming soon",
+      desc: "OneHand is a comprehensive crowdfunding platform designed to democratize fundraising for creative projects, startups, and social causes. ",
       tech: "React · SpringBoot · MySql · REST API",
-      highlights: ["Coming soon"],
+      highlights: [
+        "Built a remote support system enabling users to report issues and receive real-time assistance from support agents.",
+        "Designed a scalable backend architecture supporting secure communication, session handling, and issue tracking.",
+        "Focused on performance, reliability, and clean API design to ensure a smooth and responsive support experience.",
+      ],
       github: "https://github.com/BayoumiBytes/OneHand.git",
       image: "/onehand.jpg",
     },
@@ -229,9 +233,10 @@ export default function App() {
             </p>
 
             <p className="text-lg text-slate-400 leading-relaxed max-w-2xl mb-10">
-              I craft fast, reliable mobile applications that solve real
-              business problems—specializing in Flutter development with a focus
-              on clean architecture and seamless user experiences.
+              I develop fast and reliable mobile applications that solve actual
+              business problems. More specifically, my specializations lie in
+              Native/ Cross-platform development and Web Development with
+              extreme care for clean architecture and seamless user experiences.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -339,16 +344,17 @@ export default function App() {
                 className="space-y-4 text-slate-300 text-lg leading-relaxed"
               >
                 <p>
-                  I'm a mobile developer passionate about creating apps that
-                  make a real difference. With expertise in Flutter and Android
-                  development, I focus on building scalable, maintainable
-                  applications with clean code and intuitive interfaces.
+                  I am a mobile developer passionate about crafting applications
+                  that inspire and make a difference. Proficient in Flutter and
+                  Android development, I have been focusing on scalable,
+                  maintainable applications with clean code and intuitive
+                  interfaces.
                 </p>
                 <p>
-                  I thrive on solving complex problems and turning ideas into
-                  functional, user-friendly mobile experiences. My approach
-                  combines technical excellence with a deep understanding of
-                  user needs.
+                  I basically thrive on solving complex problems and turning
+                  ideas into functional, user-friendly mobile experiences. My
+                  approach marries technical excellence with a deep
+                  understanding of user needs.
                 </p>
                 <motion.div
                   variants={item}
