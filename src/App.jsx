@@ -307,7 +307,7 @@ export default function App() {
                  bg-gradient-to-br from-slate-800 to-slate-900 p-2"
               >
                 <img
-                  src="/IMG-20251025-WA0042.jpg"
+                  src="./IMG-20251025-WA0042.jpg"
                   alt="Mohamad Haidar"
                   className="w-full h-full object-cover rounded-full"
                 />
