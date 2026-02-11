@@ -73,7 +73,7 @@ export default function App() {
         "Reduced average response time by implementing automated routing",
       ],
       github: "https://github.com/mohamad-haidar-21/support_system-app.git",
-      image: "/project-support.png",
+      image: "./project-support.png",
     },
     {
       title: "Event Management App",
@@ -85,7 +85,7 @@ export default function App() {
         "Admin dashboard for event management and analytics",
       ],
       github: "https://github.com/mohamad-haidar-21/event_hub.git",
-      image: "/event_app.jpg",
+      image: "./event_app.jpg",
     },
     {
       title: "OneHand",
@@ -97,7 +97,7 @@ export default function App() {
         "Focused on performance, reliability, and clean API design to ensure a smooth and responsive support experience.",
       ],
       github: "https://github.com/BayoumiBytes/OneHand.git",
-      image: "/onehand.jpg",
+      image: "./onehand.jpg",
     },
   ];
 
