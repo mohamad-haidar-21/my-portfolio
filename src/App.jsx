@@ -10,6 +10,19 @@ import {
 
 export default function App() {
   const prefersReducedMotion = useReducedMotion();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const media = window.matchMedia("(max-width: 768px)");
+    const update = () => setIsMobile(media.matches);
+    update();
+    if (media.addEventListener) {
+      media.addEventListener("change", update);
+      return () => media.removeEventListener("change", update);
+    }
+    media.addListener(update);
+    return () => media.removeListener(update);
+  }, []);
   const links = {
     github: "https://github.com/mohamad-haidar-21",
     linkedin:
@@ -148,7 +161,11 @@ export default function App() {
         />
 
         {/* Parallax orbs */}
-        <ParallaxOrbs prefersReducedMotion={prefersReducedMotion} />
+        {isMobile ? (
+          <StaticOrbs />
+        ) : (
+          <ParallaxOrbs prefersReducedMotion={prefersReducedMotion} />
+        )}
       </div>
       {/* Cursor spotlight */}
       {!prefersReducedMotion && <CursorGlow />}
@@ -778,6 +795,16 @@ function ParallaxOrbs({ prefersReducedMotion }) {
         }
         className="absolute top-1/3 right-1/4 w-72 h-72 bg-cyan-500/20 rounded-full blur-3xl"
       />
+    </>
+  );
+}
+
+function StaticOrbs() {
+  return (
+    <>
+      <div className="absolute -top-24 -right-24 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl" />
+      <div className="absolute -bottom-24 -left-24 w-[420px] h-[420px] bg-indigo-500/15 rounded-full blur-3xl" />
+      <div className="absolute top-1/3 right-1/4 w-60 h-60 bg-cyan-500/15 rounded-full blur-3xl" />
     </>
   );
 }
